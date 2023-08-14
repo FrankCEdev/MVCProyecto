@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #465bd4;
+}
+.container{
+    background-color: #ffffff;
+    width: 200vmin;
+    font-size: 16px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px;
+
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: lightgrey;
+
+}
+
+h3{
+    height: 33.33%;
+    display: grid;
+    place-items: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab-content{
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+    padding: 1em 1.5em;
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+.table1{
+   table-layout: auto;
+   border-collapse: collapse;
+   font-size: 1em;
+   font-family: sans-serif;
+   min-width: 450px; 
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table1 thead tr{
+   background-color: #160a31;
+   color: #ffffff;
+   text-align: Middle;
+   font-weight: bold;
+   border-bottom: 1px solid #000000;
+   border-top: 1px #000000;
+   border : 1px solid #000000;
+}
+
+.table1 th, td{
+    padding: 12px 15px;
+}
+
+.table1 tbody tr{
+    border-bottom: 1px solid #000000;
+    border-top: 1px #000000;
+    border : 1px solid #000000;
+}
+
+.tab-content div{
+    display: none;
+}
+
+.tab-content div.active{
+    display: block;
+}
+
+.tabs .active{
+    background-color: #ffffff;
+    color: #160a31;
+}
